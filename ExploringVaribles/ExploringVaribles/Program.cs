@@ -23,6 +23,7 @@
             int minion1Health = 50;
             int minion2Health = 50;
             int minionStrength = 5;
+           
 
             //begin Code Instructions
 
@@ -37,7 +38,29 @@
             Console.WriteLine("boss's health: " + bossHealth);
             Console.WriteLine("minion 1's health: " + minion1Health);
             Console.WriteLine("minion 2's health: " + minion2Health);
-            
-        }
+
+            //fight time  
+            Console.WriteLine(villianName + " attacks " + heroFullName);
+            Console.WriteLine(heroFullName + " takes " + bossStrength + " damage ");
+
+            //current health, subtracted by attacker strength
+            heroHealth = heroHealth - bossStrength;
+            Console.WriteLine(heroFullName + " now has " + heroHealth + " health") ;
+
+            Console.WriteLine("the minions attack " + heroFullName);
+            Console.WriteLine("together " + minion1Name + " and " + minion2Name + " deal " + (minionStrength + minionStrength) + " damage to " + heroFullName );
+            heroHealth = heroHealth - (minionStrength + minionStrength);
+            Console.WriteLine(heroFullName + " now has " + heroHealth + " health");
+            Console.WriteLine("wow, this is taking a while, lets give lennon some help, lennon now deals double damage" );
+            Console.WriteLine(heroFullName + " attacks " + villianName + " and " + minion1Name + " and " + minion2Name);
+            Console.WriteLine(villianName + " and " + minion1Name + " and " + minion2Name + " take " + (heroStrength + heroStrength) + " Damage!!!");
+
+            Console.WriteLine(villianName + " now has " + (bossHealth - (heroStrength*2) ) + " health");
+            Console.WriteLine(minion1Name + " now has " + (minion1Health - (heroStrength * 2)) + " health");
+            Console.WriteLine(minion2Name + " now has " + (minion2Health - (heroStrength * 2)) + " health");
+
+
+
+        }   
     }
 }
