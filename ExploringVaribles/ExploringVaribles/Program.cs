@@ -55,11 +55,12 @@
             Console.WriteLine(heroFullName + " attacks " + villianName + " and " + minion1Name + " and " + minion2Name);
             Console.WriteLine(villianName + " and " + minion1Name + " and " + minion2Name + " take " + (heroStrength + heroStrength) + " Damage!!!");
 
-            Console.WriteLine(villianName + " now has " + (bossHealth - (heroStrength*2) ) + " health");
-            Console.WriteLine(minion1Name + " now has " + (minion1Health - (heroStrength * 2)) + " health");
-            Console.WriteLine(minion2Name + " now has " + (minion2Health - (heroStrength * 2)) + " health");
-
-
+            Console.WriteLine(villianName + " now has " + (bossHealth - (heroStrength*2) ) + " health they are defeated");
+            Console.WriteLine(minion1Name + " now has " + (minion1Health - (heroStrength * 2)) + " health they are defeated");
+            Console.WriteLine(minion2Name + " now has " + (minion2Health - (heroStrength * 2)) + " health they are defeated");
+            //
+            Console.WriteLine(heroFullName + " is le winner");
+            Console.WriteLine("yaaaaayyyy that took a while");
 
         }   
     }
